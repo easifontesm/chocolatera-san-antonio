@@ -37,7 +37,7 @@ export default function Header() {
             color: "#6b3e26",
           }}
         >
-          EL SABOR AUTÉNTICO DEL CHOCOLATE ARTESANAL
+          EL SABOR AUTÉNTICO DEL CHOCOLATE SUCRENSE
         </div>
       </div>
       {/* Navigation */}
@@ -50,14 +50,21 @@ export default function Header() {
         }}
       >
         <a
-          href="#about"
+          href="/"
+          className="mx-3 py-2 text-dark text-decoration-none"
+          style={{ letterSpacing: "0.04em" }}
+        >
+          PRINCIPAL
+        </a>
+        <a
+          href="/about"
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >
           SOBRE NOSOTROS
         </a>
         <a
-          href="#menu"
+          href="/#menu"
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >

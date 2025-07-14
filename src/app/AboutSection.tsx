@@ -4,8 +4,8 @@ export default function AboutSection() {
   return (
     <section style={{ background: "#fff", padding: "4rem 0" }}>
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-10">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-12 col-md-7 mb-4 mb-md-0">
             <h2
               className="mb-4"
               style={{
@@ -29,7 +29,7 @@ export default function AboutSection() {
               de innovación.
             </p>
             <a
-              href="#about"
+              href="/about"
               className="btn btn-outline-dark mt-3 px-4 py-2"
               style={{
                 borderRadius: "999px",
@@ -39,6 +39,17 @@ export default function AboutSection() {
             >
               CONÓCENOS
             </a>
+          </div>
+          {/* Placeholder on the right */}
+          <div className="col-12 col-md-5 d-flex justify-content-center">
+            <img
+              style={{
+                width: "100%",
+                maxWidth: "320px",
+                height: "240px",
+              }}
+              src="/assets/logo.png"
+            />
           </div>
         </div>
       </div>

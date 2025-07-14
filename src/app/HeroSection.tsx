@@ -32,8 +32,19 @@ export default function HeroSection() {
                 lineHeight: 1.1,
               }}
             >
-              EL ÚNICO CHOCOLATE ARTESANAL QUE SABE TAN BIEN COMO TE HACE
-              SENTIR.
+              SLOGAN PRINCIPAL DE LA CHOCOLATERA
+            </div>
+            <div
+              style={{
+                fontFamily: "sans-serif",
+                fontWeight: 700,
+                margin: "0.5rem 0 1.5rem 0",
+                fontSize: "1.5rem",
+                lineHeight: 1.2,
+              }}
+            >
+              Texto de relleno que describe la esencia de la chocolatera, su
+              enfoque en el chocolate artesanal y la calidad de sus productos.
             </div>
             <a
               href="#menu"
