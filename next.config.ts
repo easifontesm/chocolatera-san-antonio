@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
+const repoName = "chocolatera-san-antonio"; 
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
