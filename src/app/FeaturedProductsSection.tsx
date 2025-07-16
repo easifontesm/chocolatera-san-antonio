@@ -20,6 +20,17 @@ export default function FeaturedProductsSection() {
           color: "#fff",
         }}
       >
+        <h2
+            className="text-center mb-5"
+            style={{
+              margin: "2rem 0 0 0",
+              fontFamily: "'Oswald', sans-serif",
+              fontWeight: 900,
+              fontSize: "2.5rem",
+            }}
+          >
+            NUESTROS CHOCOLATES
+          </h2>
         {/* Hero product highlight */}
         <div
           style={{
@@ -30,7 +41,7 @@ export default function FeaturedProductsSection() {
             justifyContent: "center",
             textAlign: "center",
             position: "relative",
-            margin: "2rem 0 4rem 0",
+            margin: "0 0 4rem 0",
             boxShadow: "0 8px 32px rgba(0,0,0,0.7)",
             width: "60%",
             backgroundColor: "#2e160eff",
@@ -65,7 +76,7 @@ export default function FeaturedProductsSection() {
             style={{
               fontFamily: "'Oswald', sans-serif",
               fontWeight: 900,
-              fontSize: "4rem",
+              fontSize: "4.5vw",
               letterSpacing: "0.04em",
               margin: "0.2em 0 0.2em 0",
               lineHeight: 1,
@@ -78,7 +89,7 @@ export default function FeaturedProductsSection() {
             style={{
               fontFamily: "'Oswald', sans-serif",
               fontWeight: 700,
-              fontSize: "1.25rem",
+              fontSize: "1.45vw",
               letterSpacing: "0.02em",
               marginBottom: "0.5em",
               textShadow: "0 2px 8px #000",
@@ -89,16 +100,7 @@ export default function FeaturedProductsSection() {
         </div>
         {/* ...existing code for NUESTROS FAVORITOS... */}
         <div className="container">
-          <h2
-            className="text-center mb-5"
-            style={{
-              fontFamily: "'Oswald', sans-serif",
-              fontWeight: 900,
-              fontSize: "2.5rem",
-            }}
-          >
-            NUESTROS FAVORITOS
-          </h2>
+          
           <div className="row justify-content-center">
             {/* Example drink cards */}
             <div className="col-12 col-md-4 mb-4">

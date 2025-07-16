@@ -22,6 +22,7 @@ export default function Header() {
             letterSpacing: "0.05em",
             lineHeight: 1,
             textTransform: "uppercase",
+            textAlign: "center",
             marginBottom: "0.25rem",
           }}
         >
@@ -35,6 +36,7 @@ export default function Header() {
             fontSize: "1rem",
             letterSpacing: "0.02em",
             color: "#6b3e26",
+            textAlign: "center",
           }}
         >
           EL SABOR AUTÉNTICO DEL CHOCOLATE SUCRENSE
@@ -64,7 +66,7 @@ export default function Header() {
           SOBRE NOSOTROS
         </a>
         <a
-          href="/#menu"
+          href="/menu"
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >
