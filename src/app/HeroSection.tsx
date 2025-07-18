@@ -1,7 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function HeroSection() {
+  let pathPrefix = usePathname().includes("chocolatera-san-antonio")
+    ? "/chocolatera-san-antonio"
+    : "";
+
   return (
     <>
       <section className="container-fluid px-0">
@@ -19,7 +25,7 @@ export default function HeroSection() {
           <div
             className="col-12 col-md-6 d-flex flex-column justify-content-center"
             style={{
-              background: "#b98a5a",
+              background: "rgba(185, 138, 90, 1)",
               padding: "3rem 2rem",
               color: "#111",
             }}
@@ -32,7 +38,7 @@ export default function HeroSection() {
                 lineHeight: 1.1,
               }}
             >
-              SLOGAN PRINCIPAL DE LA CHOCOLATERA
+              LO AUTÉNTICO NO SE IMPROVISA. LO EXCEPCIONAL, TAMPOCO.
             </div>
             <div
               style={{
@@ -43,8 +49,8 @@ export default function HeroSection() {
                 lineHeight: 1.2,
               }}
             >
-              Texto de relleno que describe la esencia de la chocolatera, su
-              enfoque en el chocolate artesanal y la calidad de sus productos.
+              Llevamos el sabor del cacao del grano a tu mesa: chocolate con
+              historia, dedicación y sabor auténtico.
             </div>
             <a
               href="#menu"
@@ -56,6 +62,32 @@ export default function HeroSection() {
                 fontSize: "1.2rem",
                 letterSpacing: "0.04em",
                 width: "fit-content",
+                background: "#3b1c12ff",
+                color: "#ffffff",
+                border: "2px solid #3b1c12ff",
+                boxShadow: "0 2px 8px #3b1c1244",
+                transition:
+                  "background 0.18s, shadow 0.18s, transform 0.18s, border 0.18s",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "#49261bff";
+                (e.currentTarget as HTMLAnchorElement).style.border =
+                  "#49261bff";
+                (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                  "0 2px 12px #29150e8e";
+                (e.currentTarget as HTMLAnchorElement).style.transform =
+                  "scale(1.02)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "#3b1c12ff";
+                (e.currentTarget as HTMLAnchorElement).style.border =
+                  "#3b1c12ff";
+                (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                  "0 2px 8px #3b1c1244";
+                (e.currentTarget as HTMLAnchorElement).style.transform =
+                  "scale(1)";
               }}
             >
               VER MENÚ
@@ -67,7 +99,7 @@ export default function HeroSection() {
             style={{ minHeight: "320px", position: "relative" }}
           >
             <Image
-              src="/assets/chocs.webp" // Replace with your actual hero image path
+              src={pathPrefix + "/assets/chocs.webp"} // Replace with your actual hero image path
               alt="Bebidas de chocolate artesanal"
               fill
               style={{ objectFit: "cover" }}

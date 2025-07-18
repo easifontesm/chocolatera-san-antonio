@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
 import CheckerboardDivider from "./CheckerboardDivider";
+import { usePathname } from "next/navigation";
 
 export default function FooterSection() {
+  let pathPrefix = usePathname().includes("chocolatera-san-antonio")
+    ? "/chocolatera-san-antonio"
+    : "";
+    
   return (
     <>
       <hr
@@ -33,10 +40,9 @@ export default function FooterSection() {
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: 800,
-                  letterSpacing: "0.03em",
                 }}
               >
-                CHOCOLATERA SAN ANTONIO
+                AUTÉNTICOS EN ESENCIA, EXCEPCIONALES EN SABOR.
               </div>
             </div>
             <div className="col-6 col-md-4 mb-3 text-md-end">

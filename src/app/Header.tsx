@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  let pathPrefix = usePathname().includes("chocolatera-san-antonio")
+    ? "/chocolatera-san-antonio"
+    : "";
+
   return (
     <header className="container-fluid px-0">
       <div className="d-flex flex-column align-items-center py-4">
@@ -39,7 +46,7 @@ export default function Header() {
             textAlign: "center",
           }}
         >
-          EL SABOR AUTÉNTICO DEL CHOCOLATE SUCRENSE
+          Auténticos en esencia, excepcionales en sabor.
         </div>
       </div>
       {/* Navigation */}
@@ -52,21 +59,21 @@ export default function Header() {
         }}
       >
         <a
-          href="/"
+          href={pathPrefix + "/"}
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >
           PRINCIPAL
         </a>
         <a
-          href="/about"
+          href={pathPrefix + "/about"}
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >
           SOBRE NOSOTROS
         </a>
         <a
-          href="/menu"
+          href={pathPrefix + "/menu"}
           className="mx-3 py-2 text-dark text-decoration-none"
           style={{ letterSpacing: "0.04em" }}
         >
