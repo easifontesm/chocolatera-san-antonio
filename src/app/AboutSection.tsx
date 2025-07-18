@@ -8,6 +8,9 @@ export default function AboutSection() {
     ? "/chocolatera-san-antonio"
     : "";
 
+  console.log("Path Prefix:", pathPrefix); // Debugging line to check path prefix
+  console.log("usePathname:", usePathname()); // Debugging line to check current pathname
+
   return (
     <section
       style={{
