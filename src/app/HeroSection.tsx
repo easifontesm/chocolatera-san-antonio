@@ -66,24 +66,25 @@ export default function HeroSection() {
                 color: "#ffffff",
                 border: "2px solid #3b1c12ff",
                 boxShadow: "0 2px 8px #3b1c1244",
+
                 transition:
                   "background 0.18s, shadow 0.18s, transform 0.18s, border 0.18s",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLAnchorElement).style.background =
                   "#49261bff";
-                (e.currentTarget as HTMLAnchorElement).style.border =
-                  "#49261bff";
-                (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                  "0 2px 12px #29150e8e";
+                ((e.currentTarget as HTMLAnchorElement).style.border =
+                  "2px solid #49261bff"),
+                  ((e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                    "0 2px 12px #29150e8e");
                 (e.currentTarget as HTMLAnchorElement).style.transform =
                   "scale(1.02)";
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLAnchorElement).style.background =
                   "#3b1c12ff";
-                (e.currentTarget as HTMLAnchorElement).style.border =
-                  "#3b1c12ff";
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "2px solid #3b1c12ff";
                 (e.currentTarget as HTMLAnchorElement).style.boxShadow =
                   "0 2px 8px #3b1c1244";
                 (e.currentTarget as HTMLAnchorElement).style.transform =
