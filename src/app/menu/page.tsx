@@ -4,123 +4,112 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Header";
 import CheckerboardDivider from "../CheckerboardDivider";
 import FooterSection from "../FooterSection";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
+import ExpandableProductCard from "../ExpandableProductCard";
 
 export default function AboutPage() {
-  let pathPrefix = usePathname().includes("chocolatera-san-antonio")
-    ? "/chocolatera-san-antonio"
-    : "";
-
-  // Example product data
+  // Example product data with presentations
   const products = [
+    {
+      name: "Manitella",
+      description:
+        "Crema de cacao con maní, ideal para untar o disfrutar sola.",
+      image: "/assets/manitella.png",
+      presentations: [
+        { name: "Envase 100g", description: "Perfecto para calmar una antojo" },
+        { name: "Envase 500g", description: "Rinde para reuniones familiares" },
+      ],
+    },
     {
       name: "Chocolate de Mesa",
       description:
         "Chocolate de mesa artesanal, perfecto para bebidas calientes.",
-      image: pathPrefix + "/assets/choco_mesa.png",
+      image: "/assets/choco_mesa.png",
+      presentations: [
+        { name: "Tableta 250g", description: "Ideal para 8-10 tazas" },
+        {
+          name: "Tableta 500g",
+          description: "Rinde para reuniones familiares",
+        },
+      ],
     },
     {
       name: "Chocolate con leche",
       description: "Chocolate con leche cremoso y suave.",
-      image: pathPrefix + "/assets/choco_leche.png",
+      image: "/assets/choco_leche.png",
+      presentations: [{ name: "Barra 100g" }, { name: "Barra 250g" }],
     },
     {
       name: "Bombones rellenos",
       description: "Bombones artesanales con rellenos únicos.",
-      image: pathPrefix + "/assets/bombones.png",
+      image: "/assets/bombones.png",
+      presentations: [
+        { name: "Caja 6 piezas", description: "Surtido de sabores" },
+        { name: "Caja 12 piezas" },
+      ],
     },
   ];
-  
+
   return (
-    <div
-      style={{
-        background: "linear-gradient(135deg, #fff 70%, #b98a5a 100%)",
-        minHeight: "100vh",
-      }}
-    >
+    <>
       <Header />
       <CheckerboardDivider />
-      <main
-        className="container py-5"
+      <div
+        className="container-fluid p-4"
         style={{
-          background: "rgba(185, 138, 90, 0.07)",
-          borderRadius: "1.5rem",
-          border: "2px solid #b98a5a",
-          boxShadow: "0 4px 24px rgba(185, 138, 90, 0.12)",
+          background:
+            "linear-gradient(135deg, #200e08ec -40%, #cfa982ff 70%, #200e08ec)",
+          minHeight: "100vh",
         }}
       >
-        <div className="row align-items-center">
-          <div className="col-12 mb-4">
-            <h1
-              className="mb-4"
-              style={{
-                fontFamily: "'Oswald', sans-serif",
-                fontWeight: 900,
-                fontSize: "2.5rem",
-                letterSpacing: "0.04em",
-                color: "#b98a5a",
-                textShadow: "0 2px 8px #fff6e7",
-              }}
-            >
-              NUESTROS PRODUCTOS
-            </h1>
-          </div>
-        </div>
-        {/* Product Catalog */}
-        <div className="row">
-          {products.map((product, idx) => (
-            <div className="col-12 col-md-4 mb-4" key={idx}>
-              <div
-                className="card h-100"
+        <main
+          className="container py-5"
+          style={{
+            background: `
+            linear-gradient(135deg, #2e160e6e 0%, rgba(185,138,90,0.18) 100%),
+            url('/assets/dark-wood-bg.jpg') center center / cover no-repeat
+          `,
+            borderRadius: "1.5rem",
+            border: "2px solid #b98a5a",
+            boxShadow: "0 4px 24px rgba(185, 138, 90, 0.12)",
+          }}
+        >
+          <div className="row align-items-center">
+            <div className="col-12 mb-4">
+              <h1
+                className="mb-4"
                 style={{
-                  border: "1.5px solid #b98a5a",
-                  borderRadius: "1rem",
-                  boxShadow: "0 2px 12px #b98a5a22",
-                  background: "#fff9f4",
+                  fontFamily: "'Oswald', sans-serif",
+                  fontWeight: 900,
+                  fontSize: "2.5rem",
+                  letterSpacing: "0.04em",
+                  color: "#b98a5a",
+                  textShadow: "0 2px 8px #fff6e7",
                 }}
               >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={320}
-                  height={200}
-                  style={{
-                    borderTopLeftRadius: "1rem",
-                    borderTopRightRadius: "1rem",
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "200px",
-                  }}
-                />
-                <div className="card-body">
-                  <h5
-                    className="card-title"
-                    style={{
-                      fontFamily: "'Oswald', sans-serif",
-                      color: "#b98a5a",
-                      fontWeight: 700,
-                    }}
-                  >
-                    {product.name}
-                  </h5>
-                  <p
-                    className="card-text"
-                    style={{
-                      fontFamily: "'Oswald', sans-serif",
-                      color: "#6b3e26",
-                      fontSize: "1.05rem",
-                    }}
-                  >
-                    {product.description}
-                  </p>
-                </div>
-              </div>
+                NUESTROS PRODUCTOS
+              </h1>
             </div>
-          ))}
-        </div>
-      </main>
+          </div>
+          {/* Product Catalog */}
+          <div className="row justify-content-center">
+            {products.map((product, idx) => (
+              <div
+                className="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
+                key={idx}
+              >
+                <ExpandableProductCard
+                  image={product.image}
+                  alt={product.name}
+                  title={product.name}
+                  description={product.description}
+                  presentations={product.presentations}
+                />
+              </div>
+            ))}
+          </div>
+        </main>
+      </div>
       <FooterSection />
-    </div>
+    </>
   );
 }

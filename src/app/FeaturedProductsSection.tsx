@@ -27,9 +27,7 @@ export default function FeaturedProductsSection() {
           background:
             `
             linear-gradient(135deg, rgba(46,22,14,0.43) 0%, rgba(185,138,90,0.18) 100%),
-            url('` +
-            pathPrefix +
-            `/assets/dark-wood-bg.jpg') center center / cover no-repeat
+            url('/assets/dark-wood-bg.jpg') center center / cover no-repeat
           `,
           padding: "0 0 4rem 0",
           color: "#fff",
