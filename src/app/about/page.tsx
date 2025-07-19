@@ -29,7 +29,7 @@ export default function AboutPage() {
             marginBottom: "2.5rem",
           }}
         >
-          <div className="row align-items-center justify-content-center">
+          <div className="row col-m align-items-center justify-content-center">
             <div
               className="col-12 col-md-7 mb-4 mb-md-0"
               style={{
@@ -60,11 +60,11 @@ export default function AboutPage() {
                   color: "#3b1c12",
                 }}
               >
-                En Chocolatera San Antonio, creemos que el verdadero lujo está
-                en lo hecho a mano, con ingredientes excepcionales y tiempo.
-                Nuestros chocolates no son solo dulces; son el resultado de la
-                alquimia entre el mejor cacao sucrense, técnicas tradicionales y
-                un toque de innovación.
+                Somos un equipo de maestros chocolateros, creadores de recetas y
+                manos apasionadas que envasan con cuidado cada producto. Nos
+                esforzamos por llevar el alma de Sucre a tu paladar, creando
+                momentos memorables con el mejor chocolate artesanal de
+                Venezuela.
               </p>
               <p
                 style={{
@@ -73,10 +73,15 @@ export default function AboutPage() {
                   color: "#3b1c12",
                 }}
               >
-                Nos esforzamos por compartir la calidez y el sabor auténtico del
+                En Chocolatera San Antonio, creemos que el verdadero lujo está
+                en lo hecho a mano, con ingredientes excepcionales y tiempo.
+                Nuestros chocolates no son solo dulces; son el resultado de la
+                alquimia entre el mejor cacao sucrense, técnicas tradicionales y
+                un toque de innovación.
+                {/* Nos esforzamos por compartir la calidez y el sabor auténtico del
                 chocolate artesanal con cada persona que prueba nuestros
                 productos. Nos apasiona crear experiencias memorables, desde la
-                selección del grano hasta la taza final.
+                selección del grano hasta la taza final. */}
               </p>
             </div>
             <div
@@ -89,20 +94,21 @@ export default function AboutPage() {
                   width: "320px",
                   height: "240px",
                   maxWidth: "100%",
-                  transform: "scale(1.7)",
+                  top: "-100px",
+                  transform: "scale(0.8)",
                 }}
               >
                 {/* Collage of 5 images, slightly overlapping and rotated */}
                 <Image
                   src="/assets/beans.jpg"
                   alt="Collage 1"
-                  width={120}
-                  height={90}
+                  width={260}
+                  height={190}
                   style={{
                     position: "absolute",
                     top: "0px",
-                    left: "10px",
-                    zIndex: 2,
+                    left: "0px",
+                    zIndex: 4,
                     borderRadius: "0.8rem",
                     border: "2px solid #b98a5a",
                     boxShadow: "0 2px 12px #b98a5a55",
@@ -113,12 +119,12 @@ export default function AboutPage() {
                 <Image
                   src="/assets/sucre.jpg"
                   alt="Collage 2"
-                  width={120}
-                  height={90}
+                  width={240}
+                  height={180}
                   style={{
                     position: "absolute",
-                    top: "30px",
-                    left: "100px",
+                    top: "60px",
+                    left: "200px",
                     zIndex: 3,
                     borderRadius: "0.8rem",
                     border: "2px solid #b98a5a",
@@ -130,12 +136,12 @@ export default function AboutPage() {
                 <Image
                   src="/assets/making.jpg"
                   alt="Collage 3"
-                  width={120}
-                  height={90}
+                  width={260}
+                  height={190}
                   style={{
                     position: "absolute",
-                    top: "80px",
-                    left: "40px",
+                    top: "160px",
+                    left: "-80px",
                     zIndex: 4,
                     borderRadius: "0.8rem",
                     border: "2px solid #b98a5a",
@@ -147,30 +153,30 @@ export default function AboutPage() {
                 <Image
                   src="/assets/cocoa.jpeg"
                   alt="Collage 4"
-                  width={120}
-                  height={90}
+                  width={280}
+                  height={190}
                   style={{
                     position: "absolute",
-                    top: "120px",
-                    left: "140px",
+                    top: "240px",
+                    left: "240px",
                     zIndex: 2,
                     borderRadius: "0.8rem",
                     border: "2px solid #b98a5a",
                     boxShadow: "0 2px 12px #b98a5a55",
-                    transform: "rotate(8deg)",
+                    transform: "rotate(-8deg)",
                     background: "#fffbe9",
                   }}
                 />
                 <Image
                   src="/assets/making2.jpeg"
                   alt="Collage 5"
-                  width={120}
-                  height={90}
+                  width={240}
+                  height={180}
                   style={{
                     position: "absolute",
-                    top: "150px",
-                    left: "60px",
-                    zIndex: 1,
+                    top: "300px",
+                    left: "40px",
+                    zIndex: 3,
                     borderRadius: "0.8rem",
                     border: "2px solid #b98a5a",
                     boxShadow: "0 2px 12px #b98a5a55",
@@ -183,7 +189,7 @@ export default function AboutPage() {
           </div>
         </div>
         <main className="container-fluid py-5">
-          {/* Mission & Vision Section */}
+          {/* Mission, Vision, Values, Objectives, Org Chart Section */}
           <div
             className="container"
             style={{
@@ -191,59 +197,211 @@ export default function AboutPage() {
               borderRadius: "1.25rem",
               border: "2px solid #b98a5a",
               boxShadow: "0 2px 12px #b98a5a22",
-              padding: "2rem 1.5rem",
+              padding: "2.5rem 2rem",
               marginTop: "-1.5rem",
               marginBottom: "2.5rem",
-              maxWidth: "700px",
+              maxWidth: "1100px",
             }}
           >
-            <h3
-              style={{
-                fontFamily: "'Oswald', sans-serif",
-                fontWeight: 750,
-                color: "#291911ff",
-                marginBottom: "1rem",
-                fontSize: "2rem",
-                letterSpacing: "0.03em",
-              }}
-            >
-              NUESTRA MISIÓN
-            </h3>
-            <p
-              style={{
-                fontSize: "1.25rem",
-                fontFamily: "'Oswald', sans-serif",
-                color: "#6b3e26",
-                marginBottom: "2rem",
-              }}
-            >
-              Brindar una variedad de productos chocolateros que satisfagan el
-              paladar de la población sucrense, a través de la formulación de
-              recetas originales y la elaboración de nuestros productos
-              aprovechando el mejor cacao que ofrece nuestra región.
-            </p>
-            <h3
-              style={{
-                fontFamily: "'Oswald', sans-serif",
-                fontWeight: 750,
-                color: "#291911ff",
-                marginBottom: "1rem",
-                fontSize: "2rem",
-                letterSpacing: "0.03em",
-              }}
-            >
-              NUESTRA VISIÓN
-            </h3>
-            <p
-              style={{
-                fontSize: "1.25rem",
-                fontFamily: "'Oswald', sans-serif",
-                color: "#6b3e26",
-              }}
-            >
-              Competir en el mercado chocolatero nacional y situar nuestros
-              productos entre las opciones preferidas del consumidor venezolano.
-            </p>
+            <div className="row g-4">
+              {/* Mission & Vision */}
+              <div className="col-12 col-md-6">
+                <h3
+                  style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 750,
+                    color: "#291911ff",
+                    marginBottom: "1rem",
+                    fontSize: "2rem",
+                    letterSpacing: "0.03em",
+                  }}
+                >
+                  NUESTRA MISIÓN
+                </h3>
+                <p
+                  style={{
+                    fontSize: "1.25rem",
+                    fontFamily: "'Oswald', sans-serif",
+                    color: "#6b3e26",
+                    marginBottom: "2rem",
+                  }}
+                >
+                  Brindar una variedad de productos chocolateros que satisfagan el
+                  paladar de la población sucrense, a través de la formulación de
+                  recetas originales y la elaboración de nuestros productos
+                  aprovechando el mejor cacao que ofrece nuestra región.
+                </p>
+                <h3
+                  style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 750,
+                    color: "#291911ff",
+                    marginBottom: "1rem",
+                    fontSize: "2rem",
+                    letterSpacing: "0.03em",
+                  }}
+                >
+                  NUESTRA VISIÓN
+                </h3>
+                <p
+                  style={{
+                    fontSize: "1.25rem",
+                    fontFamily: "'Oswald', sans-serif",
+                    color: "#6b3e26",
+                  }}
+                >
+                  Competir en el mercado chocolatero nacional y situar nuestros
+                  productos entre las opciones preferidas del consumidor venezolano.
+                </p>
+              </div>
+              {/* Values */}
+              <div className="col-12 col-md-6">
+                <div style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  border: "1.5px solid #b98a5a",
+                  boxShadow: "0 2px 8px #b98a5a22",
+                  padding: "1.5rem 1.25rem",
+                  marginBottom: "1.5rem",
+                }}>
+                  <h4 style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 700,
+                    color: "#795538ff",
+                    marginBottom: "0.75rem",
+                    letterSpacing: "0.02em",
+                  }}>VALORES</h4>
+                  <ul style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontSize: "1.1rem",
+                    color: "#3b1c12",
+                    paddingLeft: "1.2em",
+                  }}>
+                    <li>Calidad artesanal</li>
+                    <li>Innovación</li>
+                    <li>Compromiso social</li>
+                    <li>Respeto por el origen</li>
+                    <li>Trabajo en equipo</li>
+                  </ul>
+                </div>
+                {/* Objectives */}
+                <div style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  border: "1.5px solid #b98a5a",
+                  boxShadow: "0 2px 8px #b98a5a22",
+                  padding: "1.5rem 1.25rem",
+                  marginBottom: "1.5rem",
+                }}>
+                  <h4 style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 700,
+                    color: "#795538ff",
+                    marginBottom: "0.75rem",
+                    letterSpacing: "0.02em",
+                  }}>OBJETIVOS</h4>
+                  <ul style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontSize: "1.1rem",
+                    color: "#3b1c12",
+                    paddingLeft: "1.2em",
+                  }}>
+                    <li>Expandir la presencia nacional</li>
+                    <li>Desarrollar nuevos productos</li>
+                    <li>Fomentar la sostenibilidad</li>
+                    <li>Capacitar al equipo humano</li>
+                  </ul>
+                </div>
+                {/* Organizational Chart */}
+                <div style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  border: "1.5px solid #b98a5a",
+                  boxShadow: "0 2px 8px #b98a5a22",
+                  padding: "1.5rem 1.25rem",
+                }}>
+                  <h4 style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 700,
+                    color: "#795538ff",
+                    marginBottom: "0.75rem",
+                    letterSpacing: "0.02em",
+                  }}>ORGANIGRAMA</h4>
+                  <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    fontFamily: "'Oswald', sans-serif",
+                    fontSize: "1rem",
+                    color: "#3b1c12",
+                  }}>
+                    <div style={{
+                      background: "#b98a5a",
+                      color: "#fff",
+                      borderRadius: "0.5rem",
+                      padding: "0.5rem 1.2rem",
+                      marginBottom: "0.5rem",
+                      fontWeight: 700,
+                    }}>Gerente General</div>
+                    <div style={{ display: "flex", gap: "1.5rem" }}>
+                      <div style={{
+                        background: "#e7c9a1",
+                        borderRadius: "0.5rem",
+                        padding: "0.4rem 1rem",
+                        fontWeight: 600,
+                        minWidth: "120px",
+                        textAlign: "center",
+                      }}>Producción</div>
+                      <div style={{
+                        background: "#e7c9a1",
+                        borderRadius: "0.5rem",
+                        padding: "0.4rem 1rem",
+                        fontWeight: 600,
+                        minWidth: "120px",
+                        textAlign: "center",
+                      }}>Ventas</div>
+                      <div style={{
+                        background: "#e7c9a1",
+                        borderRadius: "0.5rem",
+                        padding: "0.4rem 1rem",
+                        fontWeight: 600,
+                        minWidth: "120px",
+                        textAlign: "center",
+                      }}>Administración</div>
+                    </div>
+                    <div style={{ display: "flex", gap: "1.5rem", marginTop: "0.5rem" }}>
+                      <div style={{
+                        background: "#fffbe9",
+                        borderRadius: "0.5rem",
+                        padding: "0.3rem 0.8rem",
+                        fontWeight: 500,
+                        minWidth: "100px",
+                        textAlign: "center",
+                        border: "1px solid #b98a5a33",
+                      }}>Operarios</div>
+                      <div style={{
+                        background: "#fffbe9",
+                        borderRadius: "0.5rem",
+                        padding: "0.3rem 0.8rem",
+                        fontWeight: 500,
+                        minWidth: "100px",
+                        textAlign: "center",
+                        border: "1px solid #b98a5a33",
+                      }}>Vendedores</div>
+                      <div style={{
+                        background: "#fffbe9",
+                        borderRadius: "0.5rem",
+                        padding: "0.3rem 0.8rem",
+                        fontWeight: 500,
+                        minWidth: "100px",
+                        textAlign: "center",
+                        border: "1px solid #b98a5a33",
+                      }}>Contabilidad</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
         <FooterSection />
