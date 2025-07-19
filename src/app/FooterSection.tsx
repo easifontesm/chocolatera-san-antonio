@@ -32,8 +32,9 @@ export default function FooterSection() {
           <div className="row">
             <div className="col-6 col-md-4 mb-3">
               <div style={{ fontWeight: 700 }}>Encuéntranos</div>
-              <div>Stockists</div>
-              <div>About</div>
+              <div className="text-dark" >Calle Guanta, Cumaná 6101, Sucre</div>
+              <a href="/about" className="text-dark">Sobre la empresa</a>
+              
             </div>
             <div className="col-12 col-md-4 mb-3 text-center">
               <div

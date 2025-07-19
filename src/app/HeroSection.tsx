@@ -53,7 +53,7 @@ export default function HeroSection() {
               historia, dedicación y sabor auténtico.
             </div>
             <a
-              href="#menu"
+              href="/menu"
               className="btn btn-dark mt-4 px-5 py-3"
               style={{
                 borderRadius: "999px",

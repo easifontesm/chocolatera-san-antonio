@@ -46,10 +46,10 @@ export default function FeaturedProductsSection() {
         </h2>
         {/* Hero product highlight */}
         <div
-          style={{
-            minHeight: "60vh",
-            display: "flex",
-            flexDirection: "column",
+          className={`hero-product-card${heroHovered ? " hero-hovered" : ""}`}
+          onMouseEnter={() => setHeroHovered(true)}
+          onMouseLeave={() => setHeroHovered(false)}
+          style={{            
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
@@ -66,43 +66,17 @@ export default function FeaturedProductsSection() {
             transform: heroHovered ? "scale(1.015)" : "scale(1)",
             transition: "box-shadow 0.2s, transform 0.2s",
           }}
-          onMouseEnter={() => setHeroHovered(true)}
-          onMouseLeave={() => setHeroHovered(false)}
         >
           <img
             src={pathPrefix + "/assets/manitellaHero.png"}
             alt="Manitella"
-            style={{
-              maxWidth: "80%",
-              margin: "1.5rem 0 -9rem 0",
-              display: "block",
-              borderRadius: "0.5rem",
-            }}
+            className="hero-product-img"
           />
 
-          <div
-            style={{
-              fontFamily: "'Oswald', sans-serif",
-              fontWeight: 900,
-              fontSize: "4.5vw",
-              letterSpacing: "0.04em",
-              margin: "0.5em 0 0.2em 0",
-              lineHeight: 1,
-              textShadow: "0 2px 8px #000",
-            }}
-          >
+          <div className="hero-product-title">
             MANITELLA
           </div>
-          <div
-            style={{
-              fontFamily: "'Oswald', sans-serif",
-              fontWeight: 700,
-              fontSize: "1.45vw",
-              letterSpacing: "0.02em",
-              marginBottom: "0.5em",
-              textShadow: "0 2px 8px #000",
-            }}
-          >
+          <div className="hero-product-desc">
             CREMA DE CACAO Y MANÍ ARTESANAL: DULCE, CREMOSA Y 100% NATURAL
           </div>
         </div>
