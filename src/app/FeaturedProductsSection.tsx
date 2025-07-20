@@ -9,7 +9,7 @@ export default function FeaturedProductsSection() {
   let pathPrefix = usePathname().includes("chocolatera-san-antonio")
     ? "/chocolatera-san-antonio"
     : "";
-    
+
   return (
     <>
       <hr
@@ -24,8 +24,7 @@ export default function FeaturedProductsSection() {
       <section
         className="container-fluid d-flex flex-column align-items-center"
         style={{
-          background:
-            `
+          background: `
             linear-gradient(135deg, rgba(46,22,14,0.43) 0%, rgba(185,138,90,0.18) 100%),
             url('/assets/dark-wood-bg.jpg') center center / cover no-repeat
           `,
@@ -44,71 +43,97 @@ export default function FeaturedProductsSection() {
         >
           NUESTROS CHOCOLATES
         </h2>
+
+        {""}
         {/* Hero product highlight */}
-        <div
-          className={`hero-product-card${heroHovered ? " hero-hovered" : ""}`}
-          onMouseEnter={() => setHeroHovered(true)}
-          onMouseLeave={() => setHeroHovered(false)}
-          style={{            
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            position: "relative",
-            margin: "0 0 4rem 0",
-            boxShadow: heroHovered
-              ? "0 12px 24px rgba(0,0,0,0.85)"
-              : "0 8px 32px rgba(0,0,0,0.7)",
-            width: "60%",
-            backgroundColor: "rgba(43, 24, 13, 0.71)",
-            backdropFilter: "blur(2px)",
+        {""}
 
-            borderRadius: "1.5rem",
-            transform: heroHovered ? "scale(1.015)" : "scale(1)",
-            transition: "box-shadow 0.2s, transform 0.2s",
-          }}
+        <a
+          href="menu/#manitella"
+          className="d-flex justify-content-center"
+          style={{ color: "#f8e9cdff", textDecoration: "none" }}
         >
-          <img
-            src={pathPrefix + "/assets/manitellaHero.png"}
-            alt="Manitella"
-            className="hero-product-img"
-          />
+          <div
+            className={`hero-product-card${heroHovered ? " hero-hovered" : ""}`}
+            onMouseEnter={() => setHeroHovered(true)}
+            onMouseLeave={() => setHeroHovered(false)}
+            style={{
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              position: "relative",
+              margin: "0 0 4rem 0",
+              boxShadow: heroHovered
+                ? "0 12px 24px rgba(0,0,0,0.85)"
+                : "0 8px 32px rgba(0,0,0,0.7)",
+              width: "60%",
+              backgroundColor: "rgba(43, 24, 13, 0.71)",
+              backdropFilter: "blur(2px)",
 
-          <div className="hero-product-title">
-            MANITELLA
+              borderRadius: "1.5rem",
+              transform: heroHovered ? "scale(1.015)" : "scale(1)",
+              transition: "box-shadow 0.2s, transform 0.2s",
+            }}
+          >
+            <img
+              src={pathPrefix + "/assets/manitellaHero.png"}
+              alt="Manitella"
+              className="hero-product-img"
+            />
+
+            <div className="hero-product-title">MANITELLA</div>
+            <div className="hero-product-desc">
+              CREMA DE CACAO Y MANÍ ARTESANAL: DULCE, CREMOSA Y 100% NATURAL
+            </div>
           </div>
-          <div className="hero-product-desc">
-            CREMA DE CACAO Y MANÍ ARTESANAL: DULCE, CREMOSA Y 100% NATURAL
-          </div>
-        </div>
+        </a>
+
+        {""}
         {/* ...existing code for NUESTROS FAVORITOS... */}
+        {""}
         <div className="container d-flex justify-content-center">
           <div
             className="row justify-content-center align-items-center"
             style={{ width: "80vw" }}
           >
             <div className="col-12 col-md-4 mb-4">
-              <ProductCard
-                image="/assets/choco_mesa.png"
-                alt="Chocolate de Mesa"
-                title="Chocolate de Mesa"
-                description="Chocolate amargo con un sabor intenso, aromático y listo para tus creaciones"
-              />
+              <a
+                href="menu/#choco-mesa"
+                style={{ color: "#f8e9cdff", textDecoration: "none" }}
+              >
+                <ProductCard
+                  image="/assets/choco_mesa.png"
+                  alt="Chocolate de Mesa"
+                  title="Chocolate de Mesa"
+                  description="Chocolate amargo con un sabor intenso, aromático y listo para tus creaciones"
+                />
+              </a>
             </div>
             <div className="col-12 col-md-4 mb-4">
-              <ProductCard
-                image="/assets/choco_leche.png"
-                alt="Chocolate con Leche"
-                title="Chocolate con Leche"
-                description="Barras deliciosas y suaves, la armonía perfecta entre cacao fino y leche cremosa."
-              />
+              <a
+                href="menu/#choco-leche"
+                style={{ color: "#f8e9cdff", textDecoration: "none" }}
+              >
+                <ProductCard
+                  image="/assets/choco_leche.png"
+                  alt="Chocolate con Leche"
+                  title="Chocolate con Leche"
+                  description="Barras deliciosas y suaves, la armonía perfecta entre cacao fino y leche cremosa."
+                />
+              </a>
             </div>
             <div className="col-12 col-md-4 mb-4">
-              <ProductCard
-                image="/assets/bombones.png"
-                alt="Bombones Rellenos"
-                title="Bombones Rellenos"
-                description="Bocados perfectos para regalar o disfrutar en cualquier ocasión."
-              />
+              <a
+                href="menu/#bombones"
+                style={{ color: "#f8e9cdff", textDecoration: "none" }}
+              >
+                <ProductCard
+                  image="/assets/bombones.png"
+                  alt="Bombones Rellenos"
+                  title="Bombones Rellenos"
+                  description="Bocados perfectos para regalar o disfrutar en cualquier ocasión."
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -29,10 +29,11 @@ export default function AboutPage() {
             marginBottom: "2.5rem",
           }}
         >
-          <div className="row col-m align-items-center justify-content-center">
+          <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center">
             <div
-              className="col-12 col-md-7 mb-4 mb-md-0"
+              className="col-12 col-md-8 m-4 m-md-0"
               style={{
+                minWidth: "300px",
                 width: "35%",
                 background: "#ffd7afbf",
                 borderRadius: "1.5rem",
@@ -78,10 +79,6 @@ export default function AboutPage() {
                 Nuestros chocolates no son solo dulces; son el resultado de la
                 alquimia entre el mejor cacao sucrense, técnicas tradicionales y
                 un toque de innovación.
-                {/* Nos esforzamos por compartir la calidez y el sabor auténtico del
-                chocolate artesanal con cada persona que prueba nuestros
-                productos. Nos apasiona crear experiencias memorables, desde la
-                selección del grano hasta la taza final. */}
               </p>
             </div>
             <div
@@ -91,10 +88,11 @@ export default function AboutPage() {
               <div
                 style={{
                   position: "relative",
-                  width: "320px",
-                  height: "240px",
+                  minWidth: "644px",
+                  minHeight: "436px",
                   maxWidth: "100%",
-                  top: "-100px",
+                  top: "0px",
+                  left: "100px",
                   transform: "scale(0.8)",
                 }}
               >
@@ -226,10 +224,11 @@ export default function AboutPage() {
                     marginBottom: "2rem",
                   }}
                 >
-                  Brindar una variedad de productos chocolateros que satisfagan el
-                  paladar de la población sucrense, a través de la formulación de
-                  recetas originales y la elaboración de nuestros productos
-                  aprovechando el mejor cacao que ofrece nuestra región.
+                  Brindar una variedad de productos chocolateros que satisfagan
+                  el paladar de la población sucrense, a través de la
+                  formulación de recetas originales y la elaboración de nuestros
+                  productos aprovechando el mejor cacao que ofrece nuestra
+                  región.
                 </p>
                 <h3
                   style={{
@@ -251,32 +250,41 @@ export default function AboutPage() {
                   }}
                 >
                   Competir en el mercado chocolatero nacional y situar nuestros
-                  productos entre las opciones preferidas del consumidor venezolano.
+                  productos entre las opciones preferidas del consumidor
+                  venezolano.
                 </p>
               </div>
               {/* Values */}
               <div className="col-12 col-md-6">
-                <div style={{
-                  background: "#fff",
-                  borderRadius: "1rem",
-                  border: "1.5px solid #b98a5a",
-                  boxShadow: "0 2px 8px #b98a5a22",
-                  padding: "1.5rem 1.25rem",
-                  marginBottom: "1.5rem",
-                }}>
-                  <h4 style={{
-                    fontFamily: "'Oswald', sans-serif",
-                    fontWeight: 700,
-                    color: "#795538ff",
-                    marginBottom: "0.75rem",
-                    letterSpacing: "0.02em",
-                  }}>VALORES</h4>
-                  <ul style={{
-                    fontFamily: "'Oswald', sans-serif",
-                    fontSize: "1.1rem",
-                    color: "#3b1c12",
-                    paddingLeft: "1.2em",
-                  }}>
+                <div
+                  style={{
+                    background: "#fff",
+                    borderRadius: "1rem",
+                    border: "1.5px solid #b98a5a",
+                    boxShadow: "0 2px 8px #b98a5a22",
+                    padding: "1.5rem 1.25rem",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontFamily: "'Oswald', sans-serif",
+                      fontWeight: 700,
+                      color: "#795538ff",
+                      marginBottom: "0.75rem",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    VALORES
+                  </h4>
+                  <ul
+                    style={{
+                      fontFamily: "'Oswald', sans-serif",
+                      fontSize: "1.1rem",
+                      color: "#3b1c12",
+                      paddingLeft: "1.2em",
+                    }}
+                  >
                     <li>Calidad artesanal</li>
                     <li>Innovación</li>
                     <li>Compromiso social</li>
@@ -285,27 +293,35 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 {/* Objectives */}
-                <div style={{
-                  background: "#fff",
-                  borderRadius: "1rem",
-                  border: "1.5px solid #b98a5a",
-                  boxShadow: "0 2px 8px #b98a5a22",
-                  padding: "1.5rem 1.25rem",
-                  marginBottom: "1.5rem",
-                }}>
-                  <h4 style={{
-                    fontFamily: "'Oswald', sans-serif",
-                    fontWeight: 700,
-                    color: "#795538ff",
-                    marginBottom: "0.75rem",
-                    letterSpacing: "0.02em",
-                  }}>OBJETIVOS</h4>
-                  <ul style={{
-                    fontFamily: "'Oswald', sans-serif",
-                    fontSize: "1.1rem",
-                    color: "#3b1c12",
-                    paddingLeft: "1.2em",
-                  }}>
+                <div
+                  style={{
+                    background: "#fff",
+                    borderRadius: "1rem",
+                    border: "1.5px solid #b98a5a",
+                    boxShadow: "0 2px 8px #b98a5a22",
+                    padding: "1.5rem 1.25rem",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontFamily: "'Oswald', sans-serif",
+                      fontWeight: 700,
+                      color: "#795538ff",
+                      marginBottom: "0.75rem",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    OBJETIVOS
+                  </h4>
+                  <ul
+                    style={{
+                      fontFamily: "'Oswald', sans-serif",
+                      fontSize: "1.1rem",
+                      color: "#3b1c12",
+                      paddingLeft: "1.2em",
+                    }}
+                  >
                     <li>Expandir la presencia nacional</li>
                     <li>Desarrollar nuevos productos</li>
                     <li>Fomentar la sostenibilidad</li>
@@ -313,90 +329,132 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 {/* Organizational Chart */}
-                <div style={{
-                  background: "#fff",
-                  borderRadius: "1rem",
-                  border: "1.5px solid #b98a5a",
-                  boxShadow: "0 2px 8px #b98a5a22",
-                  padding: "1.5rem 1.25rem",
-                }}>
-                  <h4 style={{
-                    fontFamily: "'Oswald', sans-serif",
-                    fontWeight: 700,
-                    color: "#795538ff",
-                    marginBottom: "0.75rem",
-                    letterSpacing: "0.02em",
-                  }}>ORGANIGRAMA</h4>
-                  <div style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    fontFamily: "'Oswald', sans-serif",
-                    fontSize: "1rem",
-                    color: "#3b1c12",
-                  }}>
-                    <div style={{
-                      background: "#b98a5a",
-                      color: "#fff",
-                      borderRadius: "0.5rem",
-                      padding: "0.5rem 1.2rem",
-                      marginBottom: "0.5rem",
+                <div
+                  style={{
+                    background: "#fff",
+                    borderRadius: "1rem",
+                    border: "1.5px solid #b98a5a",
+                    boxShadow: "0 2px 8px #b98a5a22",
+                    padding: "1.5rem 1.25rem",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontFamily: "'Oswald', sans-serif",
                       fontWeight: 700,
-                    }}>Gerente General</div>
-                    <div style={{ display: "flex", gap: "1.5rem" }}>
-                      <div style={{
-                        background: "#e7c9a1",
+                      color: "#795538ff",
+                      marginBottom: "0.75rem",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    ORGANIGRAMA
+                  </h4>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      fontFamily: "'Oswald', sans-serif",
+                      fontSize: "1rem",
+                      color: "#3b1c12",
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: "#b98a5a",
+                        color: "#fff",
                         borderRadius: "0.5rem",
-                        padding: "0.4rem 1rem",
-                        fontWeight: 600,
-                        minWidth: "120px",
-                        textAlign: "center",
-                      }}>Producción</div>
-                      <div style={{
-                        background: "#e7c9a1",
-                        borderRadius: "0.5rem",
-                        padding: "0.4rem 1rem",
-                        fontWeight: 600,
-                        minWidth: "120px",
-                        textAlign: "center",
-                      }}>Ventas</div>
-                      <div style={{
-                        background: "#e7c9a1",
-                        borderRadius: "0.5rem",
-                        padding: "0.4rem 1rem",
-                        fontWeight: 600,
-                        minWidth: "120px",
-                        textAlign: "center",
-                      }}>Administración</div>
+                        padding: "0.5rem 1.2rem",
+                        marginBottom: "0.5rem",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Gerente General
                     </div>
-                    <div style={{ display: "flex", gap: "1.5rem", marginTop: "0.5rem" }}>
-                      <div style={{
-                        background: "#fffbe9",
-                        borderRadius: "0.5rem",
-                        padding: "0.3rem 0.8rem",
-                        fontWeight: 500,
-                        minWidth: "100px",
-                        textAlign: "center",
-                        border: "1px solid #b98a5a33",
-                      }}>Operarios</div>
-                      <div style={{
-                        background: "#fffbe9",
-                        borderRadius: "0.5rem",
-                        padding: "0.3rem 0.8rem",
-                        fontWeight: 500,
-                        minWidth: "100px",
-                        textAlign: "center",
-                        border: "1px solid #b98a5a33",
-                      }}>Vendedores</div>
-                      <div style={{
-                        background: "#fffbe9",
-                        borderRadius: "0.5rem",
-                        padding: "0.3rem 0.8rem",
-                        fontWeight: 500,
-                        minWidth: "100px",
-                        textAlign: "center",
-                        border: "1px solid #b98a5a33",
-                      }}>Contabilidad</div>
+                    <div style={{ display: "flex", gap: "1.5rem" }}>
+                      <div
+                        style={{
+                          background: "#e7c9a1",
+                          borderRadius: "0.5rem",
+                          padding: "0.4rem 1rem",
+                          fontWeight: 600,
+                          minWidth: "120px",
+                          textAlign: "center",
+                        }}
+                      >
+                        Producción
+                      </div>
+                      <div
+                        style={{
+                          background: "#e7c9a1",
+                          borderRadius: "0.5rem",
+                          padding: "0.4rem 1rem",
+                          fontWeight: 600,
+                          minWidth: "120px",
+                          textAlign: "center",
+                        }}
+                      >
+                        Ventas
+                      </div>
+                      <div
+                        style={{
+                          background: "#e7c9a1",
+                          borderRadius: "0.5rem",
+                          padding: "0.4rem 1rem",
+                          fontWeight: 600,
+                          minWidth: "120px",
+                          textAlign: "center",
+                        }}
+                      >
+                        Administración
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "1.5rem",
+                        marginTop: "0.5rem",
+                      }}
+                    >
+                      <div
+                        style={{
+                          background: "#fffbe9",
+                          borderRadius: "0.5rem",
+                          padding: "0.3rem 0.8rem",
+                          fontWeight: 500,
+                          minWidth: "100px",
+                          textAlign: "center",
+                          border: "1px solid #b98a5a33",
+                        }}
+                      >
+                        Operarios
+                      </div>
+                      <div
+                        style={{
+                          background: "#fffbe9",
+                          borderRadius: "0.5rem",
+                          padding: "0.3rem 0.8rem",
+                          fontWeight: 500,
+                          minWidth: "100px",
+                          textAlign: "center",
+                          border: "1px solid #b98a5a33",
+                        }}
+                      >
+                        Vendedores
+                      </div>
+                      <div
+                        style={{
+                          background: "#fffbe9",
+                          borderRadius: "0.5rem",
+                          padding: "0.3rem 0.8rem",
+                          fontWeight: 500,
+                          minWidth: "100px",
+                          textAlign: "center",
+                          border: "1px solid #b98a5a33",
+                        }}
+                      >
+                        Contabilidad
+                      </div>
                     </div>
                   </div>
                 </div>

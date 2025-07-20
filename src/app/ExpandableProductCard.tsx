@@ -71,26 +71,19 @@ export default function ExpandableProductCard({
           borderRadius: "0 0 1rem 1rem",
         }}
       >
-        <h5
+        <h2
           className="card-title"
           style={{
             fontFamily: "'Oswald', sans-serif",
             fontWeight: 700,
             color: "#dbc5aeff",
             textShadow: "0 2px 8px #443a28ff",
+            textAlign: "center",
           }}
         >
           {title}
-        </h5>
-        <p
-          className="card-text"
-          style={{
-            color: "#cca58bff",
-            fontFamily: "'Oswald', sans-serif",
-          }}
-        >
-          {description}
-        </p>
+        </h2>
+
         {presentations.length > 0 && (
           <div
             style={{
@@ -105,7 +98,7 @@ export default function ExpandableProductCard({
                 background: "rgba(240, 186, 132, 0.18)",
                 borderRadius: "0.5rem",
                 padding: expanded ? "1rem" : "0 1rem",
-                color: "#6b3e26",
+                color: "#462412ff",
                 fontFamily: "'Oswald', sans-serif",
                 fontSize: "1rem",
                 boxShadow: expanded ? "0 2px 8px #b98a5a33" : undefined,
@@ -119,7 +112,7 @@ export default function ExpandableProductCard({
                   <li key={i} style={{ marginBottom: "0.25rem" }}>
                     <span style={{ fontWeight: 600 }}>{p.name}</span>
                     {p.description && (
-                      <span style={{ color: "#a97c50", marginLeft: 4 }}>
+                      <span style={{ color: "#3b2209ff", marginLeft: 4 }}>
                         — {p.description}
                       </span>
                     )}
@@ -134,7 +127,7 @@ export default function ExpandableProductCard({
             style={{
               textAlign: "center",
               marginTop: "0.5rem",
-              color: "#b98a5a",
+              color: "#d8b593ff",
               fontFamily: "'Oswald', sans-serif",
               fontSize: "0.95rem",
               cursor: "pointer",
