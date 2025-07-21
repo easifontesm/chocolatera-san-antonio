@@ -26,7 +26,7 @@ export default function FeaturedProductsSection() {
         style={{
           background: `
             linear-gradient(135deg, rgba(46,22,14,0.43) 0%, rgba(185,138,90,0.18) 100%),
-            url('/assets/dark-wood-bg.jpg') center center / cover no-repeat
+            url('/chocolatera-san-antonio/assets/dark-wood-bg.jpg') center center / cover no-repeat
           `,
           padding: "0 0 4rem 0",
           color: "#fff",
@@ -49,7 +49,7 @@ export default function FeaturedProductsSection() {
         {""}
 
         <a
-          href="menu/#manitella"
+          href="/chocolatera-san-antonio/menu/#manitella"
           className="d-flex justify-content-center"
           style={{ color: "#f8e9cdff", textDecoration: "none" }}
         >
@@ -76,7 +76,7 @@ export default function FeaturedProductsSection() {
             }}
           >
             <img
-              src={pathPrefix + "/assets/manitellaHero.png"}
+              src={"/chocolatera-san-antonio/assets/manitellaHero.png"}
               alt="Manitella"
               className="hero-product-img"
             />
@@ -98,11 +98,11 @@ export default function FeaturedProductsSection() {
           >
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="menu/#choco-mesa"
+                href="/chocolatera-san-antonio/menu/#choco-mesa"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
-                  image="/assets/choco_mesa.png"
+                  image="/chocolatera-san-antonio/assets/choco_mesa.png"
                   alt="Chocolate de Mesa"
                   title="Chocolate de Mesa"
                   description="Chocolate amargo con un sabor intenso, aromático y listo para tus creaciones"
@@ -111,11 +111,11 @@ export default function FeaturedProductsSection() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="menu/#choco-leche"
+                href="/chocolatera-san-antonio/menu/#choco-leche"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
-                  image="/assets/choco_leche.png"
+                  image="/chocolatera-san-antonio/assets/choco_leche.png"
                   alt="Chocolate con Leche"
                   title="Chocolate con Leche"
                   description="Barras deliciosas y suaves, la armonía perfecta entre cacao fino y leche cremosa."
@@ -124,11 +124,11 @@ export default function FeaturedProductsSection() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="menu/#bombones"
+                href="/chocolatera-san-antonio/menu/#bombones"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
-                  image="/assets/bombones.png"
+                  image="/chocolatera-san-antonio/assets/bombones.png"
                   alt="Bombones Rellenos"
                   title="Bombones Rellenos"
                   description="Bocados perfectos para regalar o disfrutar en cualquier ocasión."

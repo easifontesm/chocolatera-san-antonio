@@ -18,7 +18,7 @@ export default function AboutPage() {
         "Crema de cacao con maní, ideal para untar o disfrutar sola.",
       longDescription:
         "La Nutella venezolana, pero mejor. Crema untable artesanal de cacao Sucre y maní tostado, sin aceites hidrogenados. Dulce pero no empalagosa, con trozos crocantes y aroma a cacao tostado. Úsala en pan, frutas o como ingrediente secreto en repostería.",
-      image: "/assets/manitella.png",
+      image: "/chocolatera-san-antonio/assets/manitella.png",
       presentations: [
         { name: "Envase 100g", description: "Perfecto para calmar una antojo" },
         { name: "Envase 500g", description: "Rinde para reuniones familiares" },
@@ -31,7 +31,7 @@ export default function AboutPage() {
         "Chocolate de mesa artesanal, perfecto para bebidas calientes.",
       longDescription:
         "El alma pura de Sucre en tu cocina. Nuestra tableta de cacao 70% oscuro es ideal para derretir, hornear o disfrutar en rallado sobre postres. Con granos criollos seleccionados y sin aditivos, ofrece un perfil robusto con notas frutales y un acabado ligeramente ácido. Perfecto para chefs y amantes del chocolate intenso.",
-      image: "/assets/choco_mesa.png",
+      image: "/chocolatera-san-antonio/assets/choco_mesa.png",
       presentations: [
         { name: "Tableta 250g", description: "Ideal para 8-10 tazas" },
         {
@@ -46,7 +46,7 @@ export default function AboutPage() {
       description: "Chocolate con leche cremoso y suave.",
       longDescription:
         " Suavidad que conquista paladares. Elaborado con 40% cacao venezolano y leche entera fresca, este chocolate equilibra lo dulce y lo terroso en cada bocado. Notas a caramelo y un fundido sedoso lo hacen irresistible solo o acompañado. Ideal para niños y adultos. Sin saborizantes artificiales.",
-      image: "/assets/choco_leche.png",
+      image: "/chocolatera-san-antonio/assets/choco_leche.png",
       presentations: [{ name: "Barra 100g" }, { name: "Barra 250g" }],
     },
     {
@@ -55,7 +55,7 @@ export default function AboutPage() {
       description: "Bombones artesanales con rellenos únicos.",
       longDescription:
         "Pequeñas joyas de indulgencia. Cada bombón combina una cáscara de chocolate 60% oscuro con rellenos sorpresa: ganache de café local, crema de coco o guayaba artesanal. Texturas contrastantes y sabores que celebran Venezuela. Presentación en caja de regalo reciclable. Perfecto para detalles especiales.",
-      image: "/assets/bombones.png",
+      image: "/chocolatera-san-antonio/assets/bombones.png",
       presentations: [
         { name: "Caja 6 piezas", description: "Surtido de sabores" },
         { name: "Caja 12 piezas" },
@@ -79,7 +79,7 @@ export default function AboutPage() {
       >
         {/* Sidebar */}
         <div
-          className="col-xl-2 py-4 px-5"
+          className="col-xl-2 col-lg-3 col-md-4 py-4 px-5"
           style={{
             backgroundColor: "#ffffff41",
             color: "#200e08",
@@ -186,9 +186,9 @@ export default function AboutPage() {
         </div>
 
         {/* Product catalog */}
-        <div className="col-10 container-fluid p-lg-5 py-5">
+        <div className="col-xl-10 col-lg-9 col-md-8 container-fluid p-lg-5 py-5">
           <div className="row align-items-center">
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 px-4">
               <h1
                 className="mb-4"
                 style={{
@@ -209,7 +209,7 @@ export default function AboutPage() {
           <div className="col justify-content-center">
             {/* Mapping each product object */}
             {products.map((product, idx) => (
-              <div className="row" key={idx}>
+              <div className="row d-flex justify-content-center" key={idx}>
                 <div className="col-10 col-lg-4 my-4" id={product.id}>
                   <ExpandableProductCard
                     image={product.image}
@@ -219,7 +219,7 @@ export default function AboutPage() {
                     presentations={product.presentations}
                   />
                 </div>
-                <div className="col-10 col-lg-6 mb-4 d-flex align-items-stretch p-lg-5 d-flex flex-column">
+                <div className="col-10 col-lg-5 col-xl-6 mb-4 d-flex align-items-stretch p-lg-5 d-flex flex-column">
                   <h2
                     style={{
                       fontFamily: "'Arial Black', sans-serif",

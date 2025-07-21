@@ -13,7 +13,7 @@ export default function Header() {
       <div className="d-flex flex-column align-items-center py-4">
         {/* Logo */}
         <Image
-          src="/assets/logo.png"
+          src="/chocolatera-san-antonio/assets/logo.png"
           alt="Chocolatera Logo"
           width={120}
           height={120}
@@ -75,7 +75,7 @@ export default function Header() {
                 className={
                   "nav-item nav-link px-5" + (path === "/" ? " active" : "")
                 }
-                href="/"
+                href="/chocolatera-san-antonio/"
               >
                 Principal
               </a>
@@ -84,7 +84,7 @@ export default function Header() {
                   "nav-item nav-link px-5" +
                   (path.includes("menu") ? " active" : "")
                 }
-                href="/menu"
+                href="/chocolatera-san-antonio/menu"
               >
                 Productos
               </a>
@@ -93,7 +93,7 @@ export default function Header() {
                   "nav-item nav-link px-5" +
                   (path.includes("about") ? " active" : "")
                 }
-                href="/about"
+                href="/chocolatera-san-antonio/about"
               >
                 Nosotros
               </a>

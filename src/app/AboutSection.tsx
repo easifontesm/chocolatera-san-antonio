@@ -1,15 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
 
 export default function AboutSection() {
   const [hovered, setHovered] = useState(false);
-  let pathPrefix = usePathname().includes("chocolatera-san-antonio")
-    ? "/chocolatera-san-antonio"
-    : "";
-
-  console.log("Path Prefix:", pathPrefix); // Debugging line to check path prefix
-  console.log("usePathname:", usePathname()); // Debugging line to check current pathname
+  let pathPrefix = "/chocolatera-san-antonio"
 
   return (
     <section
@@ -57,7 +51,7 @@ export default function AboutSection() {
               de innovación.
             </p>
             <a
-              href={pathPrefix + "/about"}
+              href={"/chocolatera-san-antonio/about"}
               className="btn mt-3 px-4 py-2"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
@@ -105,7 +99,7 @@ export default function AboutSection() {
                   objectFit: "contain",
                   display: "block",
                 }}
-                src={pathPrefix + "/assets/about1.png"}
+                src={"/chocolatera-san-antonio/assets/about1.png"}
                 alt="Logo Chocolatera"
               />
             </div>

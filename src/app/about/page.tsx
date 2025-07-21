@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div
           className="container-fluid"
           style={{
-            background: "center url('/assets/wood-light.png')",
+            background: "center url('/chocolatera-san-antonio/assets/wood-light.png')",
             boxShadow: "0 4px 24px rgba(185, 138, 90, 0.12)",
             padding: "2.5rem 2rem",
             borderTop: "12px solid rgba(97, 73, 48, 1)",
@@ -98,7 +98,7 @@ export default function AboutPage() {
               >
                 {/* Collage of 5 images, slightly overlapping and rotated */}
                 <Image
-                  src="/assets/beans.jpg"
+                  src="/chocolatera-san-antonio/assets/beans.jpg"
                   alt="Collage 1"
                   width={260}
                   height={190}
@@ -115,7 +115,7 @@ export default function AboutPage() {
                   }}
                 />
                 <Image
-                  src="/assets/sucre.jpg"
+                  src="/chocolatera-san-antonio/assets/sucre.jpg"
                   alt="Collage 2"
                   width={240}
                   height={180}
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   }}
                 />
                 <Image
-                  src="/assets/making.jpg"
+                  src="/chocolatera-san-antonio/assets/making.jpg"
                   alt="Collage 3"
                   width={260}
                   height={190}
@@ -149,7 +149,7 @@ export default function AboutPage() {
                   }}
                 />
                 <Image
-                  src="/assets/cocoa.jpeg"
+                  src="/chocolatera-san-antonio/assets/cocoa.jpeg"
                   alt="Collage 4"
                   width={280}
                   height={190}
@@ -166,7 +166,7 @@ export default function AboutPage() {
                   }}
                 />
                 <Image
-                  src="/assets/making2.jpeg"
+                  src="/chocolatera-san-antonio/assets/making2.jpeg"
                   alt="Collage 5"
                   width={240}
                   height={180}

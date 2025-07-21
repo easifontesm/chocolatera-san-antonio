@@ -53,7 +53,7 @@ export default function HeroSection() {
               historia, dedicación y sabor auténtico.
             </div>
             <a
-              href="/menu"
+              href="/chocolatera-san-antonio/menu"
               className="btn btn-dark mt-4 px-5 py-3"
               style={{
                 borderRadius: "999px",
@@ -100,7 +100,7 @@ export default function HeroSection() {
             style={{ minHeight: "320px", position: "relative" }}
           >
             <Image
-              src={pathPrefix + "/assets/chocs.webp"} // Replace with your actual hero image path
+              src={"/chocolatera-san-antonio/assets/chocs.webp"} // Replace with your actual hero image path
               alt="Bebidas de chocolate artesanal"
               fill
               style={{ objectFit: "cover" }}
