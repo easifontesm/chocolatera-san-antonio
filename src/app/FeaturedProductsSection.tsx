@@ -49,7 +49,7 @@ export default function FeaturedProductsSection() {
         {""}
 
         <a
-          href="/chocolatera-san-antonio/menu/#manitella"
+          href="/chocolatera-san-antonio/menu#manitella"
           className="d-flex justify-content-center"
           style={{ color: "#f8e9cdff", textDecoration: "none" }}
         >
@@ -98,7 +98,7 @@ export default function FeaturedProductsSection() {
           >
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="/chocolatera-san-antonio/menu/#choco-mesa"
+                href="/chocolatera-san-antonio/menu#choco-mesa"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
@@ -111,7 +111,7 @@ export default function FeaturedProductsSection() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="/chocolatera-san-antonio/menu/#choco-leche"
+                href="/chocolatera-san-antonio/menu#choco-leche"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
@@ -124,7 +124,7 @@ export default function FeaturedProductsSection() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <a
-                href="/chocolatera-san-antonio/menu/#bombones"
+                href="/chocolatera-san-antonio/menu#bombones"
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
