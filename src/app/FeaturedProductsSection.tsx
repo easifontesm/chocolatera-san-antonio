@@ -26,7 +26,7 @@ export default function FeaturedProductsSection() {
         style={{
           background: `
             linear-gradient(135deg, rgba(46,22,14,0.43) 0%, rgba(185,138,90,0.18) 100%),
-            url('/chocolatera-san-antonio/assets/dark-wood-bg.jpg') center center / cover no-repeat
+            url('/chocolatera-san-antonio/assets/dark-wood-bg.webp') center center / cover no-repeat
           `,
           padding: "0 0 4rem 0",
           color: "#fff",
@@ -76,7 +76,7 @@ export default function FeaturedProductsSection() {
             }}
           >
             <img
-              src={"/chocolatera-san-antonio/assets/manitellaHero.png"}
+              src={"/chocolatera-san-antonio/assets/manitellaHero.webp"}
               alt="Manitella"
               className="hero-product-img"
             />
@@ -102,7 +102,7 @@ export default function FeaturedProductsSection() {
                 style={{ color: "#f8e9cdff", textDecoration: "none" }}
               >
                 <ProductCard
-                  image="/chocolatera-san-antonio/assets/choco_mesa.png"
+                  image="/chocolatera-san-antonio/assets/choco_mesa.webp"
                   alt="Chocolate de Mesa"
                   title="Chocolate de Mesa"
                   description="Chocolate amargo con un sabor intenso, aromático y listo para tus creaciones"

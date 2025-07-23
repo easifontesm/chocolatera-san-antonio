@@ -99,7 +99,7 @@ export default function AboutSection() {
                   objectFit: "contain",
                   display: "block",
                 }}
-                src={"/chocolatera-san-antonio/assets/about1.png"}
+                src={"/chocolatera-san-antonio/assets/about1.webp"}
                 alt="Logo Chocolatera"
               />
             </div>

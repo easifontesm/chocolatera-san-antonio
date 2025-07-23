@@ -31,7 +31,7 @@ export default function AboutPage() {
         "Chocolate de mesa artesanal, perfecto para bebidas calientes.",
       longDescription:
         "El alma pura de Sucre en tu cocina. Nuestra tableta de cacao 70% oscuro es ideal para derretir, hornear o disfrutar en rallado sobre postres. Con granos criollos seleccionados y sin aditivos, ofrece un perfil robusto con notas frutales y un acabado ligeramente ácido. Perfecto para chefs y amantes del chocolate intenso.",
-      image: "/chocolatera-san-antonio/assets/choco_mesa.png",
+      image: "/chocolatera-san-antonio/assets/choco_mesa.webp",
       presentations: [
         { name: "Tableta 250g", description: "Rinde para 8-10 tazas" },
         {

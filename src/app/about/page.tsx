@@ -51,7 +51,7 @@ export default function AboutPage() {
           className="container-fluid"
           style={{
             background:
-              "center url('/chocolatera-san-antonio/assets/wood-light.png')",
+              "center url('/chocolatera-san-antonio/assets/wood-light.webp')",
             boxShadow: "0 4px 24px rgba(185, 138, 90, 0.12)",
             padding: "2.5rem 2rem",
             borderTop: "12px solid rgba(97, 73, 48, 1)",
@@ -180,7 +180,7 @@ export default function AboutPage() {
                   }}
                 />
                 <Image
-                  src="/chocolatera-san-antonio/assets/cocoa.jpeg"
+                  src="/chocolatera-san-antonio/assets/cocoa.webp"
                   alt="Collage 4"
                   width={280}
                   height={190}
