@@ -95,8 +95,8 @@ export default function AboutPage() {
                 Somos un equipo de maestros chocolateros, creadores de recetas y
                 manos apasionadas que envasan con cuidado cada producto. Nos
                 esforzamos por llevar el alma de Sucre a tu paladar, creando
-                momentos memorables con el mejor chocolate artesanal de
-                Venezuela.
+                momentos memorables con el mejor chocolate artesanal de nuestra
+                región.
               </p>
               <p
                 style={{

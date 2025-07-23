@@ -17,11 +17,14 @@ export default function AboutPage() {
       description:
         "Crema de cacao con maní, ideal para untar o disfrutar sola.",
       longDescription:
-        "La Nutella venezolana, pero mejor. Crema untable artesanal de cacao Sucre y maní tostado, sin aceites hidrogenados. Dulce pero no empalagosa, con trozos crocantes y aroma a cacao tostado. Úsala en pan, frutas o como ingrediente secreto en repostería.",
+        "Manitella no es una crema cualquiera: es el encuentro perfecto entre cacao venezolano y maní criollo tostado lentamente para resaltar su sabor natural. Elaborada sin aceites hidrogenados, colorantes ni saborizantes artificiales, cada cucharada ofrece una textura sedosa con trocitos crocantes. Ideal para untar en panes, acompañar frutas o añadir a postres. ",
       image: "/chocolatera-san-antonio/assets/manitella.png",
       presentations: [
         { name: "Envase 100g", description: "Perfecto para calmar una antojo" },
-        { name: "Envase 500g", description: "Para compartir con familia y amigos" },
+        {
+          name: "Envase 500g",
+          description: "Para compartir con familia y amigos",
+        },
       ],
     },
     {
@@ -30,7 +33,7 @@ export default function AboutPage() {
       description:
         "Chocolate de mesa artesanal, perfecto para bebidas calientes.",
       longDescription:
-        "El alma pura de Sucre en tu cocina. Nuestra tableta de cacao 70% oscuro es ideal para derretir, hornear o disfrutar en rallado sobre postres. Con granos criollos seleccionados y sin aditivos, ofrece un perfil robusto con notas frutales y un acabado ligeramente ácido. Perfecto para chefs y amantes del chocolate intenso.",
+        "El alma pura de Sucre en tu cocina. Nuestra tableta de cacao 70% oscuro es ideal para derretir, hacer repostería o disfrutar troceado sobre postres. Con granos criollos seleccionados y sin aditivos, ofrece un perfil robusto con notas frutales y un acabado ligeramente ácido. Perfecto para chefs y amantes del chocolate intenso.",
       image: "/chocolatera-san-antonio/assets/choco_mesa.webp",
       presentations: [
         { name: "Tableta 250g", description: "Rinde para 8-10 tazas" },
@@ -45,20 +48,29 @@ export default function AboutPage() {
       name: "Chocolate con leche",
       description: "Chocolate con leche cremoso y suave.",
       longDescription:
-        " Suavidad que conquista paladares. Elaborado con 40% cacao venezolano y leche entera fresca, este chocolate equilibra lo dulce y lo terroso en cada bocado. Notas a caramelo y un fundido sedoso lo hacen irresistible solo o acompañado. Ideal para niños y adultos. Sin saborizantes artificiales.",
+        "Suavidad que conquista paladares. Elaborado con 40% cacao venezolano y leche entera fresca, este chocolate equilibra lo dulce y lo terroso en cada bocado. Notas a caramelo y un fundido sedoso lo hacen irresistible solo o acompañado. Ideal para niños y adultos. Sin saborizantes artificiales.",
       image: "/chocolatera-san-antonio/assets/choco_leche.png",
-      presentations: [{ name: "Barra 75g", description: "Un delicioso bocado para comer solo..." }, { name: "Barra 150g", description: "...O acompañado" }],
+      presentations: [
+        {
+          name: "Barra 75g",
+          description: "Un delicioso bocado para comer solo...",
+        },
+        { name: "Barra 150g", description: "...O acompañado" },
+      ],
     },
     {
       id: "bombones",
       name: "Bombones rellenos",
       description: "Bombones artesanales con rellenos únicos.",
       longDescription:
-        "Pequeñas joyas de indulgencia. Cada bombón combina una cáscara de chocolate 60% oscuro con rellenos sorpresa: ganache de café local, crema de coco o guayaba artesanal. Texturas contrastantes y sabores que celebran Venezuela. Presentación en caja de regalo reciclable. Perfecto para detalles especiales.",
+        "Pequeñas joyas de indulgencia. Cada bombón combina una cáscara de chocolate 60% oscuro con rellenos sorpresa: ganache de café local, crema de coco o mermelada de guayaba artesanal. Texturas contrastantes y sabores que celebran Venezuela. Presentación en caja de regalo reciclable. Perfecto para detalles especiales.",
       image: "/chocolatera-san-antonio/assets/bombones.png",
       presentations: [
         { name: "Caja 6 piezas", description: '"Poquito porque es bendito"' },
-        { name: "Caja 12 piezas", description: '"Pero si no es suficiente..."' },
+        {
+          name: "Caja 12 piezas",
+          description: '"Pero si no es suficiente..."',
+        },
       ],
     },
   ];
@@ -227,7 +239,9 @@ export default function AboutPage() {
                   >
                     {product.name}
                   </h2>
-                  <h5>{product.longDescription}</h5>
+                  <h5 style={{ textShadow: "0 0 8px #ddc0a3ff" }}>
+                    {product.longDescription}
+                  </h5>
                 </div>
               </div>
             ))}
