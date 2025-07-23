@@ -33,7 +33,7 @@ export default function Header() {
             marginBottom: "0.25rem",
           }}
         >
-          CHOCOLATERA SAN ANTONIO
+          CHOCOLATERA SAN ANTONIO, C. A.
         </div>
         {/* Tagline */}
         <div

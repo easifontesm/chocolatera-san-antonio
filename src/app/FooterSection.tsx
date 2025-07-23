@@ -56,7 +56,7 @@ export default function FooterSection() {
             </div>
           </div>
           <div className="text-center mt-3" style={{ fontSize: "0.9rem" }}>
-            CHOCOLATERA SAN ANTONIO © 2025 TODOS LOS DERECHOS RESERVADOS
+            CHOCOLATERA SAN ANTONIO, C. A. © 2025 TODOS LOS DERECHOS RESERVADOS
           </div>
         </div>
         {/* Checkerboard divider at the bottom */}
