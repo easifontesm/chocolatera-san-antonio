@@ -3,10 +3,12 @@ import Header from "../Header";
 import CheckerboardDivider from "../CheckerboardDivider";
 import FooterSection from "../FooterSection";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function AboutPage() {
   return (
     <>
+      
       <Header />
       <CheckerboardDivider />
       <div
@@ -20,7 +22,8 @@ export default function AboutPage() {
         <div
           className="container-fluid"
           style={{
-            background: "center url('/chocolatera-san-antonio/assets/wood-light.png')",
+            background:
+              "center url('/chocolatera-san-antonio/assets/wood-light.png')",
             boxShadow: "0 4px 24px rgba(185, 138, 90, 0.12)",
             padding: "2.5rem 2rem",
             borderTop: "12px solid rgba(97, 73, 48, 1)",
@@ -285,11 +288,11 @@ export default function AboutPage() {
                       paddingLeft: "1.2em",
                     }}
                   >
-                    <li>Calidad artesanal</li>
-                    <li>Innovación</li>
-                    <li>Compromiso social</li>
-                    <li>Respeto por el origen</li>
-                    <li>Trabajo en equipo</li>
+                    <li>Pasión</li>
+                    <li>Calidad</li>
+                    <li>Sustentabilidad</li>
+                    <li>Creatividad</li>
+                    <li>Amor por nuestra tierra</li>
                   </ul>
                 </div>
                 {/* Objectives */}
@@ -328,136 +331,32 @@ export default function AboutPage() {
                     <li>Capacitar al equipo humano</li>
                   </ul>
                 </div>
-                {/* Organizational Chart */}
-                <div
+              </div>
+              {/* Organizational Chart */}
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  border: "1.5px solid #b98a5a",
+                  boxShadow: "0 2px 8px #b98a5a22",
+                  padding: "1.5rem 1.25rem",
+                }}
+              >
+                <h4
                   style={{
-                    background: "#fff",
-                    borderRadius: "1rem",
-                    border: "1.5px solid #b98a5a",
-                    boxShadow: "0 2px 8px #b98a5a22",
-                    padding: "1.5rem 1.25rem",
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 700,
+                    color: "#795538ff",
+                    marginBottom: "0.75rem",
+                    letterSpacing: "0.02em",
                   }}
                 >
-                  <h4
-                    style={{
-                      fontFamily: "'Oswald', sans-serif",
-                      fontWeight: 700,
-                      color: "#795538ff",
-                      marginBottom: "0.75rem",
-                      letterSpacing: "0.02em",
-                    }}
-                  >
-                    ORGANIGRAMA
-                  </h4>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      fontFamily: "'Oswald', sans-serif",
-                      fontSize: "1rem",
-                      color: "#3b1c12",
-                    }}
-                  >
-                    <div
-                      style={{
-                        background: "#b98a5a",
-                        color: "#fff",
-                        borderRadius: "0.5rem",
-                        padding: "0.5rem 1.2rem",
-                        marginBottom: "0.5rem",
-                        fontWeight: 700,
-                      }}
-                    >
-                      Gerente General
-                    </div>
-                    <div style={{ display: "flex", gap: "1.5rem" }}>
-                      <div
-                        style={{
-                          background: "#e7c9a1",
-                          borderRadius: "0.5rem",
-                          padding: "0.4rem 1rem",
-                          fontWeight: 600,
-                          minWidth: "120px",
-                          textAlign: "center",
-                        }}
-                      >
-                        Producción
-                      </div>
-                      <div
-                        style={{
-                          background: "#e7c9a1",
-                          borderRadius: "0.5rem",
-                          padding: "0.4rem 1rem",
-                          fontWeight: 600,
-                          minWidth: "120px",
-                          textAlign: "center",
-                        }}
-                      >
-                        Ventas
-                      </div>
-                      <div
-                        style={{
-                          background: "#e7c9a1",
-                          borderRadius: "0.5rem",
-                          padding: "0.4rem 1rem",
-                          fontWeight: 600,
-                          minWidth: "120px",
-                          textAlign: "center",
-                        }}
-                      >
-                        Administración
-                      </div>
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        gap: "1.5rem",
-                        marginTop: "0.5rem",
-                      }}
-                    >
-                      <div
-                        style={{
-                          background: "#fffbe9",
-                          borderRadius: "0.5rem",
-                          padding: "0.3rem 0.8rem",
-                          fontWeight: 500,
-                          minWidth: "100px",
-                          textAlign: "center",
-                          border: "1px solid #b98a5a33",
-                        }}
-                      >
-                        Operarios
-                      </div>
-                      <div
-                        style={{
-                          background: "#fffbe9",
-                          borderRadius: "0.5rem",
-                          padding: "0.3rem 0.8rem",
-                          fontWeight: 500,
-                          minWidth: "100px",
-                          textAlign: "center",
-                          border: "1px solid #b98a5a33",
-                        }}
-                      >
-                        Vendedores
-                      </div>
-                      <div
-                        style={{
-                          background: "#fffbe9",
-                          borderRadius: "0.5rem",
-                          padding: "0.3rem 0.8rem",
-                          fontWeight: 500,
-                          minWidth: "100px",
-                          textAlign: "center",
-                          border: "1px solid #b98a5a33",
-                        }}
-                      >
-                        Contabilidad
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  ORGANIGRAMA DE LA EMPRESA
+                </h4>
+                <img
+                  className="img-fluid"
+                  src="/chocolatera-san-antonio/assets/organigrama.png"
+                ></img>
               </div>
             </div>
           </div>

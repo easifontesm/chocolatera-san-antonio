@@ -15,8 +15,9 @@ export default function Header() {
         <Image
           src="/chocolatera-san-antonio/assets/logo.png"
           alt="Chocolatera Logo"
-          width={120}
-          height={120}
+          className="img-fluid"
+          width={100}
+          height={100}
           style={{ marginBottom: "0.5rem" }}
         />
         {/* Brand Name */}

@@ -21,7 +21,7 @@ export default function AboutPage() {
       image: "/chocolatera-san-antonio/assets/manitella.png",
       presentations: [
         { name: "Envase 100g", description: "Perfecto para calmar una antojo" },
-        { name: "Envase 500g", description: "Rinde para reuniones familiares" },
+        { name: "Envase 500g", description: "Ideal para compartir con familia y amigos" },
       ],
     },
     {
@@ -33,10 +33,10 @@ export default function AboutPage() {
         "El alma pura de Sucre en tu cocina. Nuestra tableta de cacao 70% oscuro es ideal para derretir, hornear o disfrutar en rallado sobre postres. Con granos criollos seleccionados y sin aditivos, ofrece un perfil robusto con notas frutales y un acabado ligeramente ácido. Perfecto para chefs y amantes del chocolate intenso.",
       image: "/chocolatera-san-antonio/assets/choco_mesa.png",
       presentations: [
-        { name: "Tableta 250g", description: "Ideal para 8-10 tazas" },
+        { name: "Tableta 250g", description: "Rinde para 8-10 tazas" },
         {
           name: "Tableta 500g",
-          description: "Rinde para reuniones familiares",
+          description: "Rinde hasta 20 tazas, ideal para compartir",
         },
       ],
     },
@@ -47,7 +47,7 @@ export default function AboutPage() {
       longDescription:
         " Suavidad que conquista paladares. Elaborado con 40% cacao venezolano y leche entera fresca, este chocolate equilibra lo dulce y lo terroso en cada bocado. Notas a caramelo y un fundido sedoso lo hacen irresistible solo o acompañado. Ideal para niños y adultos. Sin saborizantes artificiales.",
       image: "/chocolatera-san-antonio/assets/choco_leche.png",
-      presentations: [{ name: "Barra 100g" }, { name: "Barra 250g" }],
+      presentations: [{ name: "Barra 100g", description: "Ideal " }, { name: "Barra 250g", description: "" }],
     },
     {
       id: "bombones",
@@ -57,8 +57,8 @@ export default function AboutPage() {
         "Pequeñas joyas de indulgencia. Cada bombón combina una cáscara de chocolate 60% oscuro con rellenos sorpresa: ganache de café local, crema de coco o guayaba artesanal. Texturas contrastantes y sabores que celebran Venezuela. Presentación en caja de regalo reciclable. Perfecto para detalles especiales.",
       image: "/chocolatera-san-antonio/assets/bombones.png",
       presentations: [
-        { name: "Caja 6 piezas", description: "Surtido de sabores" },
-        { name: "Caja 12 piezas" },
+        { name: "Caja 6 piezas", description: '"Poquito porque es bendito"' },
+        { name: "Caja 12 piezas", description: '"Pero si no es suficiente..."' },
       ],
     },
   ];
