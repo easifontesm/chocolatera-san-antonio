@@ -21,7 +21,7 @@ export default function AboutPage() {
       image: "/chocolatera-san-antonio/assets/manitella.png",
       presentations: [
         { name: "Envase 100g", description: "Perfecto para calmar una antojo" },
-        { name: "Envase 500g", description: "Ideal para compartir con familia y amigos" },
+        { name: "Envase 500g", description: "Para compartir con familia y amigos" },
       ],
     },
     {
@@ -47,7 +47,7 @@ export default function AboutPage() {
       longDescription:
         " Suavidad que conquista paladares. Elaborado con 40% cacao venezolano y leche entera fresca, este chocolate equilibra lo dulce y lo terroso en cada bocado. Notas a caramelo y un fundido sedoso lo hacen irresistible solo o acompañado. Ideal para niños y adultos. Sin saborizantes artificiales.",
       image: "/chocolatera-san-antonio/assets/choco_leche.png",
-      presentations: [{ name: "Barra 100g", description: "Ideal " }, { name: "Barra 250g", description: "" }],
+      presentations: [{ name: "Barra 75g", description: "Un delicioso bocado para comer solo..." }, { name: "Barra 150g", description: "...O acompañado" }],
     },
     {
       id: "bombones",

@@ -5,10 +5,38 @@ import FooterSection from "../FooterSection";
 import Image from "next/image";
 import Head from "next/head";
 
+// Values array for easy modification
+const values = [
+  {
+    title: "Pasión",
+    description:
+      "Ponemos el corazón en cada etapa del proceso chocolatero, desde el grano hasta el empaque final.",
+  },
+  {
+    title: "Calidad",
+    description:
+      "Seleccionamos los mejores ingredientes y cuidamos cada detalle para ofrecer productos excepcionales.",
+  },
+  {
+    title: "Sustentabilidad",
+    description:
+      "Trabajamos de manera responsable con el medio ambiente y apoyamos a los productores locales.",
+  },
+  {
+    title: "Creatividad",
+    description:
+      "Innovamos constantemente en sabores y presentaciones para sorprender a nuestros clientes.",
+  },
+  {
+    title: "Amor por nuestra tierra",
+    description:
+      "Valoramos produndamente y promovemos la producción y la cultura de nuestra región sucrense.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
-      
       <Header />
       <CheckerboardDivider />
       <div
@@ -288,11 +316,17 @@ export default function AboutPage() {
                       paddingLeft: "1.2em",
                     }}
                   >
-                    <li>Pasión</li>
-                    <li>Calidad</li>
-                    <li>Sustentabilidad</li>
-                    <li>Creatividad</li>
-                    <li>Amor por nuestra tierra</li>
+                    {values.map((value, idx) => (
+                      <li key={idx} style={{ marginBottom: "0.75em" }}>
+                        <span style={{ fontWeight: 600 }}>{value.title}</span>
+                        <br />
+                        <span
+                          style={{ fontSize: "0.98em", color: "#63452dff" }}
+                        >
+                          {value.description}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 {/* Objectives */}
@@ -325,10 +359,11 @@ export default function AboutPage() {
                       paddingLeft: "1.2em",
                     }}
                   >
-                    <li>Expandir la presencia nacional</li>
-                    <li>Desarrollar nuevos productos</li>
-                    <li>Fomentar la sostenibilidad</li>
-                    <li>Capacitar al equipo humano</li>
+                    <li>Expandir nuestra presencia en todo el país</li>
+                    <li>Dar a conocer el potencial del cacao sucrense </li>
+                    <li>
+                      Fomentar el desarrollo sustentable de nuestra región
+                    </li>
                   </ul>
                 </div>
               </div>

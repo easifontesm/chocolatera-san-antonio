@@ -8,7 +8,7 @@ export default function FooterSection() {
   let pathPrefix = usePathname().includes("chocolatera-san-antonio")
     ? "/chocolatera-san-antonio"
     : "";
-    
+
   return (
     <>
       <hr
@@ -32,9 +32,12 @@ export default function FooterSection() {
           <div className="row">
             <div className="col-6 col-md-4 mb-3">
               <div style={{ fontWeight: 700 }}>Encuéntranos</div>
-              <div className="text-dark" >Calle Guanta, Cumaná 6101, Sucre</div>
-              <a href="/chocolatera-san-antonio/about" className="text-dark">Sobre la empresa</a>
-              
+              <div style={{ fontWeight: 700 }}>
+                Calle Guanta, Cumaná 6101, Sucre
+              </div>
+              <a href="/chocolatera-san-antonio/about" className="text-dark">
+                Sobre la empresa
+              </a>
             </div>
             <div className="col-12 col-md-4 mb-3 text-center">
               <div
@@ -47,6 +50,7 @@ export default function FooterSection() {
               </div>
             </div>
             <div className="col-6 col-md-4 mb-3 text-md-end">
+              <div style={{ fontWeight: 700 }}>Contáctanos</div>
               <div style={{ fontWeight: 700 }}>(412) 555-5555</div>
               <div>hello@chocosanantonio.com.ve</div>
             </div>
